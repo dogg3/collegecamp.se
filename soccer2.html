@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+   <title>CollegeCamp</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="logga.png">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="soccer2.css"   rel="stylesheet">
+
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  
+<script type="text/javascript">
+var menuslider; 
+var x = 0;
+  
+  function meny() {
+
+    menuslider = document.getElementById('menu-slider');
+    
+    if(x == 0) {
+    menuslider.style.marginTop = "0px";
+    x = 1;
+  } else if(x == 1) {
+     menuslider.style.marginTop = "-100vh";
+      x = 0;
+    
+  }
+
+  };
+
+
+      function initMap() {
+        var uluru = {lat: 59.370195, lng: 18.158294};
+        var map = new google.maps.Map(document.getElementById('googleMap'), {
+          zoom: 11,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+
+
+
+
+</head>
+
+
+  <body onload="myFunction()">
+
+  <div class="container-fluid">
+    
+    <div class="row ">
+ 
+      
+
+      <!---meny content-->
+        <div class="col-xs-12 meny" id="menu"> <img class="ikonBild" src="menu.png" id="ikon" onclick="meny()"></div>
+
+      </div>
+
+     
+      <div class="row">
+       <div class="col-xs-12 menu-slider" id="menu-slider">
+         <ul>
+         <li><a href="index.html">startsida </a></li>
+           <li><a href="soccer2.html">college camp</a></li>
+           <li><a href="soccer4.html">college prep camp</a></li>
+           <li><a href="soccer5.html">playerlot</a></li>
+           <li><a href="soccer3.html">vårt team</a></li>
+           <li><a href="kontakt.html">kontakt</a></li>
+           
+          </ul>
+        </div>
+    </div>
+
+
+ <div class="row secondContentRow">
+    <div class="col-xs-12 col-md-12 text"> 
+      
+      <div class="row col-md-5 col-md-offset-1  ">
+      <h2 class="col-xs-10  col-xs-offset-1  "><span style="font-size: 1.5em; color: rgb(180, 41, 55)">college camp</span> </h2>
+
+      <h6 class="col-xs-10  col-xs-offset-1  "><span style=" font-size: 1.5em; color: black"> 26-30 juli 2017</span> </h6>
+
+        <p class="col-xs-10   col-xs-offset-1 ">College Camp är ett förberedande läger för spelare som vill vara maximalt mentalt och fysiskt förberedda för sitt första år på college. College Camp vill att den nyblivna ”Student Athlete” ska få en så bra erfarenhet som möjligt både på och utanför fotbollsplanen. Genom ambitiösa och intensiva fotbollsträningar samt informationsseminarier så förbereder College Camp praktiskt spelaren till vad som komma skall i USA. Träningen är utformad efter det system de amerikanska universiteten jobbar efter och kommer ge dig en inblick i hur en dag ser ut som ”Student Athlete” både under försäsong och säsong. 
+Vi välkomnar även andra elitspelare som är nyfikna på att ta del av träning och seminarier där spelarna blir förberedda på vad som krävs för att lyckas inom collegefotbollen. 
+Anmäl ditt intresse kostnadsfritt i formuläret för att få vidare information. 
+
+  </p>
+
+
+      </div>
+
+      
+ 
+ <div class=" row col-sm-8 col-sm-offset-2 col-md-5 col-xs-10 col-xs-offset-1 col-md-offset-0   loggaBild">
+  
+       <h2 class="col-md-offset-0 col-xs-offset-0" style="text-align:center; font-size: 1.5em; color: rgb(180, 41, 55)">inkluderat<br> <span style="font-weight: bold; font-size: 0.7em; color:black; font-variant: underline;">2500 sek</span></h2>
+
+      <ul style="background-color: #EEEEEE; text-align: center; line-height: 1.8em; margin-top: 20px; border:1px solid black; padding-top:20px; padding-bottom: 20px; font-variant: small-caps; letter-spacing: 0.9px; font-size: 1.2em;">
+      <li>fotbollsträningar</li>
+      <li>Frivillig individuell teknikträning</li>
+
+      <li>Två träningspass per dag </li>
+      <li>Frivillig individuell teknikträning</li>
+      <li>Frivilligt individuellt styrkeschema</li>
+      <li>Frivilligt individuellt konditionsschema</li>
+      <li>Lunch </li>
+      <li>Mellanmål</li>
+       <li>T-shirt</li>
+       <li>Vattenflaska</li>
+      </ul>
+
+
+    
+
+ 
+       </div>
+
+
+    <form method="get" action="anmalan.php" class=" row col-sm-8 col-sm-offset-2 col-md-6 col-xs-10 col-xs-offset-1 col-md-offset-3   loggaBild">
+        <fieldset class="      col-md-offset-0 col-md-12  ">
+       <legend><h2 class="col-md-offset-0 col-xs-offset-0" style="text-align:center; font-size: 1.5em; color: rgb(180, 41, 55)">anmäl dig</h2></legend>
+
+
+    
+    <input type="text" name="namn" placeholder="förnamn efternamn">
+    <br>
+    <br>
+    <input type="text" name="lag" placeholder="klubb">
+    <br>
+    <br>
+    <input type="text" name="mail" placeholder="email">
+    <br>
+   <br>
+    <input type="text" name="adress" placeholder="adress">
+    <br>
+    <br>
+    <input type="text" name="postnr" placeholder="postnr & ort">
+    <br><br>
+    <input id="submit" type="submit" value="submit">
+
+    <p style="text-align: center; font-variant: small-caps; margin-top:20px; margin-bottom: 20px; text-decoration: underline;">*anmälan är inte bindande</p>
+
+        </fieldset>
+       </form>
+     
+      
+
+
+    </div>
+    <div id="bosonip">
+    <h5 id="kalas" class="  col-xs-12 col-xs-offset-0 ">vallen ip - lidingö</h5>
+    </div>
+      <div class="col-xs-10 col-md-6 col-md-offset-3 col-xs-offset-1" id="googleMap" style="height:350px;">
+        
+      </div>
+    </div>
+
+
+
+  
+     
+
+ 
+<div class="row footerRow"> 
+  <div class="col-xs-10 col-xs-offset-1  footer" > 
+  <hr>
+  <ul>
+    <li><a href="index.html">startsida</a></li>
+    <li><a href="soccer2.html">academy camp</a></li>
+    <li><a href="soccer4.html">college prep camp</a></li>       
+    <li><a href="soccer5.html">playerlot</a></li>
+    <li><a href="soccer3.html">vårt team</a></li>
+    <li><a href="kontakt.html">kontakt</a></li>
+    
+  </ul>
+  <hr>
+  <h5> © 2016 copyright - CSP camp</h5>
+  </div>
+</div>
+ 
+
+    </div>
+     <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy50COH6tcralL7K6Edn1YttruyCUzwnY&callback=initMap">
+    </script>
+  </body>
+</html>

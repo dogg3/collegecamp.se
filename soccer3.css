@@ -1,0 +1,464 @@
+
+
+
+
+
+
+
+.meny {
+    height: 50px;
+    -webkit-transition: all 0.35s ease-in-out;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b8c6df+0,6d88b7+100;Grey+Blue+3D+%231 */
+background: rgb(184,198,223); /* Old browsers */ 
+background: -moz-linear-gradient(top, rgba(184,198,223,1) 0%, rgba(109,136,183,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(184,198,223,1) 0%,rgba(109,136,183,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(184,198,223,1) 0%,rgba(109,136,183,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', endColorstr='#6d88b7',GradientType=0 ); /* IE6-9 */
+    box-shadow: black 0px 1px 2px;
+}
+
+
+
+
+.ikonBild {
+
+ position: absolute;
+     margin-right: 20px;
+ right: 23px;
+ top:14px;
+ height: 23px;
+ width:23px;
+ -webkit-transition: all 0.35s ease-in-out;
+
+}
+
+.mellanbild {
+  height:100vh;
+}
+
+#menu {
+
+  padding: 0px;
+  position: fixed;
+  z-index: 998;
+  background-color:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+background: rgb(181,189,200); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+copy
+}
+
+.menu-slider {
+  height: 100vh;
+padding-top: 90px;
+  margin-top: -100vh;
+
+  background-color: white;
+ -webkit-transition: all 1.3s ease-out;
+ position: fixed;
+z-index: 997;
+text-align: center;
+background-color: rgba(128, 128, 128, 0.85);
+
+
+}
+
+.menu-slider a {
+  font-size: 25px;
+  line-height: 2.5em;
+}
+
+
+ul {
+
+  padding: 0px;
+}
+
+li {
+  font-variant: none;
+  list-style-type: none;
+  
+  margin-left: 0px;
+
+}
+
+a {
+  margin-top: 15px;
+  font-variant: small-caps;
+  list-style-type: none;
+  text-decoration: none;
+  position: relative;
+  font-variant: small-caps;
+  color: black;
+
+}
+a:before {
+content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+
+  left: 0;
+  background-color: #aa2937;
+    visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover {
+  color:black;
+  text-decoration: none;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+  .content{
+    background-color: #F7F7F7 ;
+ 
+    height: 430px;
+  }
+
+h1 {
+  color:white;
+  font-family:helvetica;
+  font-variant:small-caps;
+  letter-spacing:2px;
+}
+
+  .hejhej{
+    display:block;
+    margin-top:150px;
+    
+    
+  }
+.bosonCampRow {
+  
+  height: 100%;
+}
+
+.bosonCamp {
+  height: 80%;
+  margin-top: 50px;
+  background-color: #3A5894 ;
+  border-radius: 8px;
+}
+
+.campContentRow {
+
+  height: 70%;
+}
+
+.campContent {
+ margin-top: 0px;
+  height: 75%;
+  background-color: black;
+  border-radius: 5px;
+
+}
+
+.knappRow {
+
+ height: 20%;
+
+}
+
+.knapp:active {
+box-shadow: 0px 0px 0px;
+
+}
+
+.knapp {
+    display: -webkit-flex;
+  align-items:center;
+  justify-content:center;
+      box-shadow: 0px 2px 2px;
+
+
+  margin-top: 15px;
+  height: 70%;
+  margin-top: ;
+  background-color: rgb(170, 41, 55);
+
+  border-radius: 1px;
+   border-radius:5px;
+
+ 
+}
+
+
+
+.knapp > p {
+  color:white;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  text-shadow: 0px 1px 1px black;
+}
+
+.knapp > p:active {
+  text-shadow: 0px 0px 0px ;
+
+}
+
+
+.campContentRow > h4 {
+  display:block;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+font-variant: small-caps;
+font-size: 20px;
+  letter-spacing: 1.2px;
+font-family: helvetica;
+color: white;
+
+}
+
+.secondContentRow p {
+  font-size: 16px;
+  line-height: 2em;
+}
+.secondContentRow h2 {
+  font-size: 32px;
+}
+
+.headerRow {
+  height: 100vh;
+
+
+}
+
+.headerBild {
+  margin-top: 0px;
+
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background-image:url('soccerBall.jpg');
+  background-size:100%;
+}
+
+h2 {
+  font-family: helvetica;
+  font-variant: small-caps;
+  letter-spacing: 1.2px;
+}
+
+h3 {
+  font-family: helvetica;
+  font-variant: small-caps;
+  letter-spacing: 1.05px;
+}
+p, .traning {
+
+  font-family: helvetica;
+  line-height: 1.7em;
+}
+
+p {
+  margin-top:20px;
+  margin-bottom:40px;
+  }
+
+
+.text, .footer {
+  padding: 0px;
+}
+
+
+
+
+  .footerRow {
+   border:2px solid grey;
+   background-color: #9CA5AF;
+ margin: 0px;
+   width: 100%;
+
+  
+  }
+
+  #googleMap {
+    margin-bottom: 100px;
+    z-index: auto;
+   -webkit-transform: none;
+  
+  }
+
+  #googleMap > div {
+    z-index: auto
+  }
+
+
+#kalas {
+  margin-bottom: 30px;
+
+  font-size: 1.3em;
+  font-variant: small-caps;
+  letter-spacing: 1.6px;
+  
+  display: -webkit-flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+}
+
+
+
+
+
+.footerRow li {
+  font-variant: small-caps;
+  letter-spacing: 1.1px;
+  font-family: helvetica;
+}
+
+.footerRow h4 {
+  font-family: helvetica;
+
+ 
+}
+
+.footer > hr {
+
+visibility: hidden;
+ 
+}
+
+.contentRow {
+  margin:0px;
+}
+
+    
+.contentContainer {
+  padding: 0px;
+  margin-left:0px;
+  padding: 0px;
+  margin-right:0px;
+  margin-top: 50px;
+  margin-bottom:50px;
+}
+
+.traningText {
+  margin-bottom: 35px;
+}
+ 
+ .secondContentRow {
+  margin-top: 90px;
+ }
+
+ .loggaBild {
+  margin-bottom: 100px;
+ }
+
+
+ input {
+  width: 100%;
+  font-style: helvetica;
+  font-variant: small-caps;
+  letter-spacing: 0.8px;
+  padding-left: 5px;
+  text-align: center;
+
+}
+
+h2 {
+  text-align: center;
+  color:rgb(180, 41, 55);
+}
+
+
+
+
+.profiler {
+  display: flex; 
+  align-items:center; 
+  justify-content:center;
+ 
+  
+}
+
+.profilBild {
+  border:2px solid black; 
+  border-radius: 100px; 
+  height:150px; 
+  width:150px;
+  
+   display: flex; 
+  align-items:center; 
+  justify-content:center;
+
+
+}
+
+.profilerText {
+  display: -webkit-flex;
+   align-items:center; 
+   justify-content:center;
+  font-variant: small-caps;
+  
+  
+  
+}
+
+.underprofilerText {
+    display: -webkit-flex;
+     align-items:center; 
+     justify-content:center;
+  
+ margin-top: -20px;
+     font-variant: small-caps;
+  letter-spacing: 1.2px;
+  margin-bottom: 50px;
+
+
+}
+
+.underprofilerText > h5 {
+   font-size: 20px;
+   letter-spacing: 0px;
+ 
+
+}
+
+
+#submit {
+ box-shadow: 0px 1px 1px;
+ height:40px;
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+        
+  .loggaBild {
+  
+  margin-top:35px;
+  margin-bottom: 110px;
+  
+  
+
+
+    }
+
+  .footerRow {
+   border:2px solid grey;
+   background-color: #9CA5AF;
+ margin: 0px;
+   width: 100%;
+   margin-top: 90px;
+  
+  }
+
+  .vartTeam {
+   margin-bottom:40px;
+  }
+}

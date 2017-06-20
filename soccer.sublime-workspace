@@ -1,0 +1,654 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"els",
+				"elseif	elseif …"
+			],
+			[
+				"font",
+				"font-variant: 〔property〕"
+			],
+			[
+				"pos",
+				"$position〔variable〕"
+			],
+			[
+				"p",
+				"php	<?php … ?>"
+			],
+			[
+				"mysql_fetch",
+				"mysql_fetch_assoc〔function〕"
+			],
+			[
+				"t",
+				"type	Attr"
+			],
+			[
+				"back",
+				"background-image: 〔property〕"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"container",
+				"containerBild"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"clas",
+				"class	Attr"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_assoc〔function〕"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"uid",
+				"$uidcheck〔variable〕"
+			],
+			[
+				"_s",
+				"$_SERVER〔variable〕"
+			],
+			[
+				"game",
+				"gamesPlayed"
+			],
+			[
+				"mysql_fetc",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mysql_sele",
+				"mysql_select_db〔function〕"
+			],
+			[
+				"h",
+				"h4	Tag"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"list-s",
+				"list-style-type"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"marin",
+				"margin-top"
+			],
+			[
+				"ses",
+				"session_start〔function〕"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"session_u",
+				"session_unset"
+			],
+			[
+				"session",
+				"session_start"
+			],
+			[
+				"sess",
+				"session_destroy〔function〕"
+			],
+			[
+				"session_de",
+				"session_destroy"
+			],
+			[
+				"for",
+				"form	Tag"
+			],
+			[
+				"_se",
+				"$_SESSION〔variable〕"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"fon",
+				"font-family: 〔property〕"
+			],
+			[
+				"animati",
+				"animation-iteration-count: 〔property〕"
+			],
+			[
+				"rotate",
+				"rotateY()"
+			],
+			[
+				"transf",
+				"-webkit-transform: 〔property〕"
+			],
+			[
+				"animation",
+				"animation-timing-function: 〔property〕"
+			],
+			[
+				"animat",
+				"animation-iteration-count: 〔property〕"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"soccer",
+				"soccer3"
+			],
+			[
+				"first",
+				"firstcontent"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"echo",
+				"echo〔keyword〕"
+			],
+			[
+				"head",
+				"headcount"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"fli",
+				"$flipcount〔variable〕"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"wit",
+				"width"
+			],
+			[
+				"z",
+				"z-index: 〔property〕"
+			],
+			[
+				"paddin",
+				"padding-bottom: 〔property〕"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"web",
+				"webkit-transform"
+			],
+			[
+				"vi",
+				"visibility"
+			],
+			[
+				"font-",
+				"font-size: 〔property〕"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"BACK",
+				"background-color"
+			],
+			[
+				"hel",
+				"helvetica"
+			],
+			[
+				"ro",
+				"row"
+			],
+			[
+				"shadow",
+				"text-shadow: 〔property〕"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"lett",
+				"letter-spacing"
+			],
+			[
+				"small",
+				"small-caps"
+			],
+			[
+				"zi",
+				"z-index"
+			],
+			[
+				"hed",
+				"header"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"l",
+				"li	Tag"
+			],
+			[
+				"tran",
+				"transition: 〔property〕"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"class",
+				"class=〔attribute〕"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"st",
+				"style	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 277.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Emmet",
+				"Set Syntax: Emmet"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/content2.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/search.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/.htaccess",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/profile.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/user.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/archive.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/upload_image.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/upload.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/updateProfile.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/updateProfile.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/updateProfile.inc.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/troubleshooting.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/signup.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/loginsql.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/session.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/registrera.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/content3.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/content1.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/footer.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/sug.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/loginsql.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/logout.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/login.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/dbh.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/phpProject/container.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/logout.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/loginsql.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/container.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/loginsql.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/signup.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/dbh.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/login.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/session.php",
+		"/Users/douglaslandvik/Desktop/web/mall.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/fitta.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/soccercamp/soccer.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/test.php",
+		"/Applications/XAMPP/xamppfiles/etc/my.cnf",
+		"/Applications/XAMPP/xamppfiles/xampp",
+		"/Applications/XAMPP/xamppfiles/phpmyadmin/config.inc.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/soccercamp/soccer2.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/soccercamp/tackform.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/soccercamp/anmalan.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/soccercamp/soccer2.html",
+		"/Users/douglaslandvik/Desktop/web/soccer camp/soccer.html",
+		"/Users/douglaslandvik/Desktop/web/soccer camp/soccer.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/kuken/spel.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kuken/flipacoin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kuken/welcome_get.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kuken/formkul.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/untitled folder/welcome_get.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/untitled folder/formkul.html",
+		"/Users/douglaslandvik/Desktop/web/web-development/css3.html",
+		"/Users/douglaslandvik/Desktop/web/bootstrap-3.3.6-dist/css/bootstrap-theme.css",
+		"/Users/douglaslandvik/Desktop/web/web-development/studentjob.css",
+		"/Users/douglaslandvik/Desktop/web/web-development/charge.php",
+		"/Users/douglaslandvik/Desktop/web/web-development/index.php",
+		"/Users/douglaslandvik/Desktop/web/soccer camp/soccer2.css",
+		"/Users/douglaslandvik/Desktop/web/soccer camp/contactform.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-config.php",
+		"/Users/douglaslandvik/Desktop/web/web-development/java.html",
+		"/Users/douglaslandvik/Desktop/web/soccer.js",
+		"/Users/douglaslandvik/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/Users/douglaslandvik/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/douglaslandvik/Desktop/soccer camp/soccer.html",
+		"/Applications/XAMPP/xamppfiles/lib/perl5/site_perl/5.16.3/darwin-thread-multi-2level/DBD/mysql/INSTALL.pod"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"background-image",
+			"container",
+			"button",
+			"container",
+			".header",
+			"header",
+			"backgr",
+			"ul",
+			"li a",
+			"li",
+			"menybut",
+			"arc",
+			"update",
+			"inlogg",
+			"the team",
+			"academ",
+			"span",
+			"a hre",
+			"loggabil",
+			"form",
+			"logga",
+			"password",
+			"xxamp",
+			"1px solid",
+			"paddin2å2pg",
+			"align",
+			"header",
+			"backgr",
+			"host",
+			"cfg['servers",
+			"h5",
+			"z-in",
+			"z-inde",
+			"logga",
+			"secondcontentrow",
+			"meny",
+			"menu",
+			"li",
+			"span",
+			"knapp",
+			"offset",
+			"contentco",
+			"contentrow",
+			"content",
+			"secondContentRow",
+			"menu",
+			"ikon",
+			"p",
+			"footer",
+			"headerRow",
+			"footerrow",
+			"footerRow",
+			"footerrow",
+			"row",
+			"footerRow",
+			"footer",
+			"foo",
+			"meny",
+			"knapp",
+			"img"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 51.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 98.0
+	},
+	"pinned_build_system": "",
+	"project": "soccer.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"em",
+				"Package Control Messages"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

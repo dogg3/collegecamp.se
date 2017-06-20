@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head></head>
+  <title>CollegeCamp</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="logga.png">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="soccer.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+<script type="text/javascript">
+
+var pagetop, menu, yPos, ikon, menuslider, text;
+
+function yScroll() {
+ 
+ menu = document.getElementById('menu');
+  ikon = document.getElementById('ikon');
+  yPos = window.pageYOffset;
+
+
+  if(yPos < 200) {
+    menu.style.height = "0px";
+    ikon.style.visibility = "hidden";
+     menuslider.style.marginTop = "-100vh";
+
+    
+   
+  }
+
+
+
+
+  else {
+    ikon.style.visibility = "visible";
+    menu.style.height = "50px";
+     ikon.style.top = "14px";
+
+
+  }
+};
+
+//aktivera funktionen ovanför som tar fram headern
+window.addEventListener("scroll", yScroll);
+
+//parallax header textrutan
+$(window).scroll(function() {
+  var Wscroll = $(this).scrollTop();
+   $('.textruta').css({
+      'transform' : 'translate(0px, '+ Wscroll /3 +'%)'
+    });
+
+
+  
+
+
+
+
+
+
+});
+
+
+
+
+
+//menys slidar neråt
+var menuslider; 
+var x = 0;
+  
+  function meny() {
+
+    menuslider = document.getElementById('menu-slider');
+    
+    if(x == 0) {
+    menuslider.style.marginTop = "0px";
+    x = 1;
+  } else if(x == 1) {
+     menuslider.style.marginTop = "-100vh";
+      x = 0;
+    
+  }
+
+  };
+
+//flytt av boxen när sidan först laddas ur funktion nu för gick inte att göra den hidden/visible
+//function textFlytt() {
+
+//var tjo = document.getElementById("stefan");
+
+//tjo.style.transform = "translate(0px, 40px)";
+
+//tjo.style.transition = " 2s";
+
+
+
+//}
+
+
+
+
+</script>
+</head>
+
+
+  <body onload="textFlytt()" >
+
+  <div style="padding:0px;"  class="container-fluid">
+    
+
+ 
+      
+
+      <!---meny content-->
+        <div class="col-xs-12 meny" id="menu"> <img class="ikonBild" src="menu.png" id="ikon" onclick="meny()"></div>
+
+   
+
+     
+      
+       <div class="col-xs-12 menu-slider" id="menu-slider">
+         <ul>
+         
+           <li><a class ="lank" href="soccer2.html">college camp</a></li>
+           <li><a class ="lank" href="soccer4.html">college prep camp</a></li>
+           <li><a class ="lank" href="soccer5.html">playerlot</a></li>
+           <li><a class ="lank" href="soccer3.html">vårt team</a></li>
+           <li><a class ="lank" href="kontakt.html">kontakt</a></li>
+       
+          </ul>
+        </div>
+      
+
+  <div class="row col-md-12 sistaContent knulla is-showing" style="margin-top: 45px;">
+      <div class="row col-md-8   ">
+      <h2 class="col-xs-10  col-md-8 col-xs-offset-1 col-md-offset-2  ">giving back </h2>
+        <p style="font-size: 1.2em; line-height: 1.6em;" class="col-xs-10  col-md-8 col-xs-offset-1 col-md-offset-2 ">Sommaren 2016 bestämde vi oss för att göra en välgörenhetsturnering. Över 100 fantastiska människor dök upp på Lidingövallen och spelade fotboll i välgörenhetens tecken. Vi samlade även ihop använda eller nya sportkläder och lyckades packa två fulla resväskor. Tyvärr kunde inte vi personligen åka för vi skulle tillbaka till College, men vår underbara vän Idris ställde upp och åkte ner till Kenya och delade ut alla kläder. Han anordnande även en stor turneringen där alla barnen var med och spelade. Vi hoppas kunna göra detta varje sommar och få åka med på resan nästa gång. Detta projektet hade inte varit möjligt utan IFK Lidingö FK, Idris och alla andra underbara människor som bidrog med hjälp. </p>
+
+
+      </div>
+
+      
+
+       <div class=" bildC col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1  ">
+          <div class="  windowTint">
+           
+            </div>
+       </div>
+
+
+
+</div>
+</div>
+
+
+
+     
+
+
+
+</div>
+
+
+
+
+
+ 
+<div class="row footerRow"> 
+  <div class="col-xs-10 col-xs-offset-1  footer" > 
+  <hr>
+  <ul>
+    <li><a href="index.html">startsida</a></li>
+    <li><a href="soccer2.html">college camp</a></li>
+    <li><a href="soccer4.html">college prep camp</a></li>       
+    <li><a href="soccer5.html">playerlot</a></li>
+    <li><a href="kontakt.html">kontakt</a></li>
+    <li><a href="soccer3.html">meet the team</a></li>
+  </ul>
+  <hr>
+  <h5 class=""> © 2017 copyright - CSP camp</h5>
+  </div>
+</div>
+ 
+
+    </div>
+  </body>
+</html>

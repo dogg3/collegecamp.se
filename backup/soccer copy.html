@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  <title>CSP Soccer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="soccer.css" rel="stylesheet">
+  
+<script type="text/javascript">
+
+var pagetop, menu, yPos, ikon, menuslider, text;
+
+function yScroll() {
+ 
+ menu = document.getElementById('menu');
+  ikon = document.getElementById('ikon');
+  yPos = window.pageYOffset;
+
+
+  if(yPos < 200) {
+    menu.style.height = "0px";
+    ikon.style.visibility = "hidden";
+     menuslider.style.marginTop = "-225px";
+
+    
+   
+  }
+
+
+
+
+  else {
+    ikon.style.visibility = "visible";
+    menu.style.height = "50px";
+     ikon.style.top = "14px";
+
+
+  }
+};
+
+
+window.addEventListener("scroll", yScroll);
+
+var menuslider; 
+var x = 0;
+  
+  function meny() {
+
+    menuslider = document.getElementById('menu-slider');
+    
+    if(x == 0) {
+    menuslider.style.marginTop = "0px";
+    x = 1;
+  } else if(x == 1) {
+     menuslider.style.marginTop = "-225px";
+      x = 0;
+    
+  }
+
+  };
+
+
+
+
+
+var myVar;
+
+
+function myFunction() {
+    myVar = setTimeout(headerText(), 3000);
+}
+
+  function headerText() {
+  
+  text = document.getElementById('hej');
+  text.style.visibility = "visible";
+
+
+}
+
+
+
+
+
+
+</script>
+</head>
+
+
+  <body onload="myFunction()">
+
+  <div class="container-fluid">
+    
+    <div class="row">
+ 
+      
+
+      <!---meny content-->
+        <div class="col-xs-12 meny" id="menu"> <img class="ikonBild" src="menu.png" id="ikon" onclick="meny()"></div>
+
+      </div>
+
+     
+      <div class="row">
+       <div class="col-xs-12 menu-slider" id="menu-slider">
+         <ul>
+         <li><a href="">csp camps</a></li>
+           <li><a href="">academy camp</a></li>
+           <li><a href="">college prep camp</a></li>
+           <li><a href="">bosön soccer camp</a></li>
+           <li><a href="">kontakt</a></li>
+           <li><a href="">meet the team</a></li>
+          </ul>
+        </div>
+    </div>
+   
+  <div class="row headerRow">
+  
+  <div class="col-xs-12 header headerBild">
+
+  <h1 class="col-xs-offset-1 hejhej" id="hej">the</h1><br>
+
+  <h1 class="col-xs-offset-1 ">first</h1><br>
+   <h1 class="col-xs-offset-1">european</h1><br>
+    <h1 class="col-xs-offset-1">college soccer camp</h1><br>
+
+
+    
+  </div> 
+
+  </div> 
+
+
+   
+
+ 
+
+<!---first content-->
+ <div class="row col-md-10 col-md-offset-1 contentContainer" >
+<div class="row contentRow">
+  <div class="col-xs-12 col-md-4  content"> 
+
+    <div class="row bosonCampRow">
+      <div class="col-xs-10 col-xs-offset-1 bosonCamp">
+        <div class="row campContentRow">
+          <h4 class="col-xs-6 col-xs-offset-3 rubrikCamp">academy camp</h4>
+          <div class="col-xs-10 col-xs-offset-1 campContent"></div>
+        </div>
+        <div class="row knappRow">
+          <div class="col-xs-8 col-xs-offset-2 knapp">
+             <p class="col-4">anmäl dig</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row contentRow">
+  <div class="col-xs-12 col-md-4  content"> 
+
+    <div class="row bosonCampRow">
+      <div class="col-xs-10 col-xs-offset-1 bosonCamp">
+        <div class="row campContentRow">
+          <h4 class="col-xs-6 col-xs-offset-3 rubrikCamp">college camp</h4>
+          <div class="col-xs-10 col-xs-offset-1 campContent"></div>
+        </div>
+        <div class="row knappRow">
+          <div class="col-xs-8 col-xs-offset-2 knapp">
+             <p>anmäl dig</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row contentRow">
+  <div class="col-xs-12 col-md-4 content"> 
+
+    <div class="row bosonCampRow">
+      <div class="col-xs-10 col-xs-offset-1 bosonCamp">
+        <div class="row campContentRow">
+          <h4 class="col-xs-6 col-xs-offset-3 rubrikCamp vcenter">bosön all camp </h4>
+          <div class="col-xs-10 col-xs-offset-1 campContent"></div>
+        </div>
+        <div class="row knappRow">
+          <div class="col-xs-8 col-xs-offset-2 knapp">
+            <p>anmäl dig</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<!---second content-->
+  <div class="row secondContentRow">
+    <div class="col-xs-10 col-xs-offset-1 col-md-9 col-md-offset-1  text"> 
+      <h2 class="col-md-6 col-md-offset-2"><span style="color: red">csp</span> soccer camp</h2>
+      <div class="row">
+        <p class="col-xs-12 col-md-6 col-md-offset-2">Målet med CSP  Academy är att skapa en unik miljö for seriösa svenska fotbollsspelare att forberda sig for ett liv som “college athletes” i USA. Lagrena vander sig ocksa till de spelare som ar nyfikna pa vad det innebar att vara en  fotbollspelande student i USA. aventyret, professionalism och hela “college-upplevelsen” i sig. Genom detta ar vi overtygade att spelare som gatt varat kamp kommer vara narmare mentalt och fysiskt valet att aka till USA. Ett val som kommer vara bland det absolut basta valet du gjort i ditt liv.</p>
+      </div>
+     
+      <hr class="col-xs-11">
+
+      <div class="row">
+        <h3 class="col-xs-12 col-md-6 col-md-offset-2">träningen</h3>
+        <p class="col-xs-12 col-md-6 col-md-offset-2 traning">Träningarna kommer därför ledas av högt utbildade tränare. Nuvarande college-studenter bidra med färsk erfarenhet genom att vara involverade i uppläggning av träningen.<br>Majoriteten av traningarna kommer ske i grupp med malet att skapa en miljo som liknar den pa de basta fotbollsprogrammen i USA. Spelet i USA ar mer fysisikt kravande da spelet ar ii ett konstant hogt tempo. 
+        Traningar kommer saledes vara inriktade pa mycket rorelse, forflyttning och omstallningar bade defensivt och offensivt.
+        </p>
+      </div>
+
+    </div>
+    </div>
+     
+
+ 
+<div class="row footerRow"> 
+  <div class="col-xs-10 col-xs-offset-1  footer" > 
+  <hr>
+  <ul>
+    <li><a href="">csp camps</a></li>
+    <li><a href="">academy camp</a></li>
+    <li><a href="">college prep camp</a></li>       
+    <li><a href="">bosön prep camp</a></li>
+    <li><a href="">kontakt</a></li>
+    <li><a href="">meet the team</a></li>
+  </ul>
+  <hr>
+  <h5 class=""> © 2016 copyright - CSP camp</h5>
+  </div>
+</div>
+ 
+
+    </div>
+  </body>
+</html>

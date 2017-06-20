@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+   <title>CollegeCamp</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="logga.png">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="soccer.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+<script type="text/javascript">
+
+var pagetop, menu, yPos, ikon, menuslider, text;
+
+function yScroll() {
+ 
+ menu = document.getElementById('menu');
+  ikon = document.getElementById('ikon');
+  yPos = window.pageYOffset;
+
+
+  if(yPos < 200) {
+    menu.style.height = "0px";
+    ikon.style.visibility = "hidden";
+     menuslider.style.marginTop = "-100vh";
+
+    
+   
+  }
+
+
+
+
+  else {
+    ikon.style.visibility = "visible";
+    menu.style.height = "50px";
+     ikon.style.top = "14px";
+
+
+  }
+};
+
+//aktivera funktionen ovanför som tar fram headern
+window.addEventListener("scroll", yScroll);
+
+//parallax header textrutan
+$(window).scroll(function() {
+  var Wscroll = $(this).scrollTop();
+   $('.textruta').css({
+      'transform' : 'translate(0px, '+ Wscroll /3 +'%)'
+    });
+
+//texten  
+if(Wscroll > $('.contentRow').offset().top - ($(window).height() / 1)) {
+    $('.contentRow .content').each(function(i){
+        setTimeout(function(){
+          $('.contentRow .content').eq(i).addClass('is-showing');
+            }, 150 * (i+1));
+    });
+  };
+
+  //lägerboxarna
+  if(Wscroll > $('.text').offset().top - ($(window).height() / 1.3)) {
+    $('.text .texttext').each(function(i){
+        setTimeout(function(){
+          $('.text .texttext').eq(i).addClass('is-showing');
+            }, 250 * (i+1));
+    });
+  };
+
+   //vårt team
+  if(Wscroll > $('.tjatja').offset().top - ($(window).height() / 1.35)) {
+    $('.tjatja  ').each(function(i){
+        setTimeout(function(){
+          $('.tjatja  ').eq(i).addClass('is-showing');
+            }, 150 * (i+1));
+    });
+  };
+
+ //vårt team
+  if(Wscroll > $('.knulla').offset().top - ($(window).height() / 1.35)) {
+    $('.knulla  ').each(function(i){
+        setTimeout(function(){
+          $('.knulla  ').eq(i).addClass('is-showing');
+            }, 250 * (i+1));
+    });
+  };
+
+  
+ if (Wscroll > $('.bildC').offset().top - $(window).height() / 1.3) {
+ $('.bildC').css({'background-position':'center '+Wscroll - $('.bildC').offset().top +'px;'})
+
+
+
+
+};
+ 
+
+
+
+
+});
+
+
+
+
+
+//menys slidar neråt
+var menuslider; 
+var x = 0;
+  
+  function meny() {
+
+    menuslider = document.getElementById('menu-slider');
+    
+    if(x == 0) {
+    menuslider.style.marginTop = "0px";
+    x = 1;
+  } else if(x == 1) {
+     menuslider.style.marginTop = "-100vh";
+      x = 0;
+    
+  }
+
+  };
+
+//flytt av boxen när sidan först laddas ur funktion nu för gick inte att göra den hidden/visible
+//function textFlytt() {
+
+//var tjo = document.getElementById("stefan");
+
+//tjo.style.transform = "translate(0px, 40px)";
+
+//tjo.style.transition = " 2s";
+
+
+
+//}
+
+
+
+
+</script>
+</head>
+
+
+  <body onload="textFlytt()" >
+
+  <div style="padding:0px;"  class="container-fluid">
+    
+
+ 
+      
+
+      <!---meny content-->
+        <div class="col-xs-12 meny" id="menu"> <img class="ikonBild" src="menu.png" id="ikon" onclick="meny()"></div>
+
+   
+
+     
+      
+       <div class="col-xs-12 menu-slider" id="menu-slider">
+         <ul>
+         
+           <li><a class ="lank" href="soccer2.html">college camp</a></li>
+           <li><a class ="lank" href="soccer4.html">college prep camp</a></li>
+           <li><a class ="lank" href="soccer5.html">playerlot</a></li>
+           <li><a class ="lank" href="soccer3.html">vårt team</a></li>
+           <li><a class ="lank" href="kontakt.html">kontakt</a></li>
+       
+          </ul>
+        </div>
+      
+<div class=" headerRow">
+<div class="col-xs-12 overHeader">
+  <div class="container-logga">
+    <div class="abow">
+      <img src="logga.png">
+    </div>
+    <h4 class="grov">CollegeCamp</h4>
+  </div>
+  <div class="menynHeader" >
+    <ul>
+    <li><a href="#firstcontent">camps</a></li>
+     <li><a href="soccer3.html">vårt team</a></li>    
+     <li><a href="kontakt.html">kontakt</a></li>
+   
+    </ul>
+  </div>
+
+</div>
+
+<div class="col-xs-12 nedreHeader">
+
+<a href="#firstcontent" id="stefan" class="textruta col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+<div>
+<h1  id="kalle">till camps</h1>
+</div>
+</a>
+
+</div>
+</div> 
+
+
+
+
+   
+
+ 
+
+<!---first content-->
+ <div class="row col-md-12 col-lg-12  contentContainer" id="firstcontent" >
+<div class="row contentRow col-lg-4 col-md-4">
+  <div class="col-xs-12 col-md-12 col-lg-12   content"> 
+
+    <div class="row bosonCampRow">
+      <div class="col-xs-10 col-xs-offset-1 bosonCamp">
+        <div class="row campContentRow">
+          <h4 class="col-xs-6 col-xs-offset-3 rubrikCamp">college camp</h4>
+          <div class="col-xs-10 col-xs-offset-1 campContent "></div>
+        </div>
+
+        <div class="row knappRow">
+          <a href="soccer2.html" style="" class="col-xs-8 col-xs-offset-2 knapp">
+             <p class="col-4">anmäl dig</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row contentRow col-md-4 col-lg-4">
+  <div class="col-xs-12 col-md-12 col-lg-12  content"> 
+
+    <div class="row bosonCampRow">
+      <div class="col-xs-10 col-xs-offset-1 bosonCamp">
+        <div class="row campContentRow">
+          <h4 class="col-xs-8 col-xs-offset-2 rubrikCamp">college prep camp</h4>
+          <div class="col-xs-10 col-xs-offset-1 campContent collegecamp"></div>
+        </div>
+        <div class="row knappRow">
+         <a href="soccer4.html" style="" class="col-xs-8 col-xs-offset-2 knapp">
+             <p class="col-4">anmäl dig</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row contentRow col-md-4 col-lg-4">
+  <div class="col-xs-12 col-md-12 col-lg-12 content"> 
+
+    <div class="row bosonCampRow">
+      <div class="col-xs-10 col-xs-offset-1 bosonCamp">
+        <div class="row campContentRow">
+          <h4 class="col-xs-6 col-xs-offset-3 rubrikCamp vcenter"> playerlot  </h4>
+          <div class="col-xs-10 col-xs-offset-1 campContent bosonjao"></div>
+        </div>
+        <div class="row knappRow">
+         <a href="soccer5.html" style="" class="col-xs-8 col-xs-offset-2 knapp">
+             <p class="col-4">mer info</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<!---second content-->
+  <div class="row secondContentRow">
+    <div class="col-xs-12 col-md-12 text"> 
+      
+      <div class="row col-md-8 texttext ">
+      <h2 class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 "> soccer camp</h2>
+        <p class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2">
+Oliver Powers och Douglas Landvik har båda spelat fotboll på den högsta collegenivån för Florida Atlantic University. Vi vet hur krävande en säsong kan vara för nya spelare och vill med våra camps därför förbereda spelare på bästa möjliga sätt. Detta gör vi genom att designa en träningsvecka utifrån hur de bästa amerikanska universiteten jobbar. Våra spelare får kostschema, styrkeprogram och en unik möjlighet att skapa sin egen fotbollsportfolio. Vi kommer även att hålla föreläsningar där vi går igenom allt annat praktiskt man bör veta om livet som ”College Athlete”</p>
+
+
+      </div>
+
+
+
+       <div class="  col-md-3 loggaBild texttext">
+        <img class="  col-xs-6 col-sm-4 col-sm-offset-4 col-xs-offset-3 col-md-offset-0 col-md-8"src="logga.png">
+       </div>
+
+
+     
+     
+      <hr class="col-xs-11">
+
+
+      <div class="row col-md-8 sistaContent ">
+      <h3 class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja ">träningen</h3>
+        <p class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja">Vi optimerar träningen utifrån vad som krävs i USA. Det är tuffare fysiskt och mentalt att spela college-fotboll jämfört med att spela t.ex u-19 allsvenskan. Det är också fria byten vilket betyder att spelet håller ett konstant högt tempo. Vi förbereder er för detta genom att hålla träningar med samma intensitet och fokus som de bästa programmen i USA.  </p>
+
+
+      </div>
+
+      
+
+       <div class=" col-xs-12 col-md-3 tjatja loggaBild">
+        <a style="z-index: 4;" class="col-xs-12" href="soccer3.html"><div class=" vartTeam col-xs-10   col-xs-offset-1 col-md-offset-0 col-md-12"><h2>vårt team</h2></div></a>
+       </div>
+
+        <hr class="col-xs-11">
+
+
+      <div class="row col-md-8  sistaContent ">
+      <h3 class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja ">player profile</h3>
+        <p class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja">Unikt för våra Camps är att vi erbjuder alla spelare chansen att skapa sitt egna fotbolls-portfolio.
+Vi har utvecklat en tjänst som heter Playerlot där spelare kan marknadsföra sina fotbollskunskaper och bli uppmärksammade av klubbar, tränare, agenter och universitet. Varje spelare kan enkelt bygga sin egna portfolio genom Playerlots hemsida. </p>
+
+
+      </div>
+
+      
+
+       <div style="margin-bottom: 30px;" class="tjatja col-xs-12 col-md-4  col-md-pull-2 ">
+       <img class="col-xs-12 col-xs-offset-1 fin" src="mobilplayer.png">
+       </div>
+
+       <hr class="col-xs-11">
+
+
+      <div class="row col-md-8  sistaContent ">
+      <h3 class="col-xs-10  col-md-8 col-xs-offset-1 col-md-offset-2 knulla ">giving back </h3>
+        <p class="col-xs-10  col-md-8 col-xs-offset-1 col-md-offset-2 knulla">Sommaren 2016 bestämde vi oss för att göra en välgörenhetsturnering. Över 100 fantastiska människor dök upp på Lidingövallen och spelade fotboll i välgörenhetens tecken. Vi samlade även ihop använda eller nya sportkläder och lyckades packa två fulla resväskor. Tyvärr kunde inte vi personligen åka för vi skulle tillbaka till College, men vår underbara vän Idris ställde upp och åkte ner till Kenya och delade ut alla kläder. Han anordnande även en stor turneringen där alla barnen var med och spelade. Vi hoppas kunna göra detta varje sommar och få åka med på resan nästa gång. Detta projektet hade inte varit möjligt utan IFK Lidingö FK, Idris och alla andra underbara människor som bidrog med hjälp. </p>
+
+
+      </div>
+
+      
+
+       <div class="knulla bildC col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1  ">
+          <div class="  windowTint">
+           
+            </div>
+       </div>
+
+
+
+</div>
+</div>
+
+
+
+     
+
+
+
+</div>
+
+
+
+
+
+ 
+<div class="row footerRow"> 
+  <div class="col-xs-10 col-xs-offset-1  footer" > 
+  <hr>
+  <ul>
+    <li><a href="index.html">startsida</a></li>
+    <li><a href="soccer2.html">college camp</a></li>
+    <li><a href="soccer4.html">college prep camp</a></li>       
+    <li><a href="soccer5.html">playerlot</a></li>
+    <li><a href="kontakt.html">kontakt</a></li>
+    <li><a href="soccer3.html">meet the team</a></li>
+  </ul>
+  <hr>
+  <h5 class=""> © 2017 copyright - CSP camp</h5>
+  </div>
+</div>
+ 
+
+    </div>
+  </body>
+</html>
