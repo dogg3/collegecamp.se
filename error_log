@@ -1,0 +1,12 @@
+[30-Dec-2016 17:26:46 UTC] PHP Notice:  Undefined variable: message in /home/dlandvik2015/public_html/kontakta.php on line 41
+[30-Dec-2016 17:29:47 UTC] PHP Notice:  Undefined variable: message in /home/dlandvik2015/public_html/kontakta.php on line 41
+[30-Dec-2016 18:00:42 UTC] PHP Notice:  Undefined variable: message in /home/dlandvik2015/public_html/anmalan.php on line 43
+[30-Dec-2016 18:03:10 UTC] PHP Notice:  Undefined variable: message in /home/dlandvik2015/public_html/kontakta.php on line 41
+[30-Dec-2016 18:43:51 UTC] PHP Notice:  Undefined variable: message in /home/dlandvik2015/public_html/anmalan.php on line 45
+[31-Dec-2016 11:42:33 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/dlandvik2015/public_html/anmalan.php on line 43
+[31-Dec-2016 11:42:38 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/dlandvik2015/public_html/anmalan.php on line 43
+[31-Dec-2016 11:42:40 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/dlandvik2015/public_html/anmalan.php on line 43
+[31-Dec-2016 11:42:44 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/dlandvik2015/public_html/anmalan.php on line 43
+[31-Dec-2016 11:50:21 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/dlandvik2015/public_html/anmalan.php on line 43
+[31-Dec-2016 11:50:22 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/dlandvik2015/public_html/anmalan.php on line 43
+[31-Dec-2016 11:51:09 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/dlandvik2015/public_html/anmalan.php on line 43

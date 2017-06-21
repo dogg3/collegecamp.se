@@ -1,18 +1,49 @@
-<!DOCTYPE html>
+<html lang="en"><head><title>CollegeCamp</title><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/png" href="logga.png"><link href="css/bootstrap.min.css" rel="stylesheet"><link href="soccer.css" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><script type="text/javascript">
 
-<html lang="en">
-  <head></head>
-  <title>CollegeCamp</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="logga.png">
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="soccer.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  
-<script type="text/javascript">
+ var knull = 0;
+
+
+
+$(document).ready(function() {
+setInterval(function(){
+
+
+    switch (knull) {
+       case 0:
+        $("#headText").html("skräddarsytt fysträningar utefter ditt schema");
+        break;
+
+
+      case 1:
+        $("#headText").html("faciliteter på bosön och lidingövallen");
+        $("#headText").css("color", "white");
+        $("#headText").css("text-shadow", "0px");
+        $("#headText").css("font-size", "3.4em");
+        break;
+
+      case 2:
+         $("#headText").html("förebered dig inför college soccer");
+          break;
+
+
+   };
+
+    knull++;
+
+
+   if  (knull > 2) {
+    knull = 0;
+   };
+
+},3300);
+
+
+   
+   });
+
+
+
+
 
 var pagetop, menu, yPos, ikon, menuslider, text;
 
@@ -55,7 +86,7 @@ $(window).scroll(function() {
     });
 
 //texten  
-if(Wscroll > $('.contentRow').offset().top - ($(window).height() / 1)) {
+if(Wscroll > $('.contentRow').offset().top - ($(window).height() / 1.3)) {
     $('.contentRow .content').each(function(i){
         setTimeout(function(){
           $('.contentRow .content').eq(i).addClass('is-showing');
@@ -108,7 +139,6 @@ if(Wscroll > $('.contentRow').offset().top - ($(window).height() / 1)) {
 
 
 
-
 //menys slidar neråt
 var menuslider; 
 var x = 0;
@@ -144,20 +174,31 @@ var x = 0;
 
 
 
-</script>
-</head>
+</script></head>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
 
 
-  <body onload="textFlytt()" >
 
-  <div style="padding:0px;"  class="container-fluid">
+
+  <body onload="textFlytt()">
+
+  <div style="padding:0px;" class="container-fluid">
     
 
  
       
 
       <!---meny content-->
-        <div class="col-xs-12 meny" id="menu"> <img class="ikonBild" src="menu.png" id="ikon" onclick="meny()"></div>
+        <div class="col-xs-12 meny" id="menu" style="height: 0px;"> <img class="ikonBild" src="menu.png" id="ikon" onclick="meny()" style="visibility: hidden;"></div>
 
    
 
@@ -166,11 +207,11 @@ var x = 0;
        <div class="col-xs-12 menu-slider" id="menu-slider">
          <ul>
          
-           <li><a class ="lank" href="soccer2.html">college camp</a></li>
-           <li><a class ="lank" href="soccer4.html">college prep camp</a></li>
-           <li><a class ="lank" href="soccer5.html">playerlot</a></li>
-           <li><a class ="lank" href="soccer3.html">vårt team</a></li>
-           <li><a class ="lank" href="kontakt.html">kontakt</a></li>
+           <li><a class="lank" href="soccer2.html">college camp</a></li>
+           <li><a class="lank" href="soccer4.html">college prep camp</a></li>
+           <li><a class="lank" href="soccer5.html">playerlot</a></li>
+           <li><a class="lank" href="soccer3.html">vårt team</a></li>
+           <li><a class="lank" href="kontakt.html">kontakt</a></li>
        
           </ul>
         </div>
@@ -183,7 +224,7 @@ var x = 0;
     </div>
     <h4 class="grov">CollegeCamp</h4>
   </div>
-  <div class="menynHeader" >
+  <div class="menynHeader">
     <ul>
     <li><a href="#firstcontent">camps</a></li>
      <li><a href="soccer3.html">vårt team</a></li>    
@@ -195,6 +236,7 @@ var x = 0;
 </div>
 
 <div class="col-xs-12 nedreHeader">
+<h3 class="col-xs-10 col-xs-push-1" id="headText" >förebered dig inför college soccer</h3>
 
 
 
@@ -209,9 +251,9 @@ var x = 0;
  
 
 <!---first content-->
- <div class="row col-md-12 col-lg-12  contentContainer" id="firstcontent" >
+ <div class="row col-md-12 col-lg-12  contentContainer" id="firstcontent">
 <div class="row contentRow col-lg-4 col-md-4">
-  <div class="col-xs-12 col-md-12 col-lg-12   content"> 
+  <div class="col-xs-12 col-md-12 col-lg-12   content is-showing"> 
 
     <div class="row bosonCampRow">
       <div class="col-xs-10 col-xs-offset-1 bosonCamp">
@@ -234,7 +276,7 @@ var x = 0;
 
 
 <div class="row contentRow col-md-4 col-lg-4">
-  <div class="col-xs-12 col-md-12 col-lg-12  content"> 
+  <div class="col-xs-12 col-md-12 col-lg-12  content is-showing"> 
 
     <div class="row bosonCampRow">
       <div class="col-xs-10 col-xs-offset-1 bosonCamp">
@@ -244,7 +286,7 @@ var x = 0;
         </div>
         <div class="row knappRow">
          <a href="soccer4.html" style="" class="col-xs-8 col-xs-offset-2 knapp">
-             <p class="col-4">anmäl dig</p>
+             <p class="col-4">mer info</p>
           </a>
         </div>
       </div>
@@ -253,7 +295,7 @@ var x = 0;
 </div>
 
 <div class="row contentRow col-md-4 col-lg-4">
-  <div class="col-xs-12 col-md-12 col-lg-12 content"> 
+  <div class="col-xs-12 col-md-12 col-lg-12 content is-showing"> 
 
     <div class="row bosonCampRow">
       <div class="col-xs-10 col-xs-offset-1 bosonCamp">
@@ -278,12 +320,13 @@ var x = 0;
   <div class="row secondContentRow">
     <div class="col-xs-12 col-md-12 text"> 
       
-      <div class="row col-md-8 texttext ">
+      <div class="row col-md-8 texttext  is-showing">
       <h2 class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 "> college camp</h2>
         <p class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2">
 Oliver Powers, Douglas Landvik och Oskar Sewerin har alla spelat fotboll på den absolut högsta collegenivån för Florida Atlantic University och Syracuse University. De har erfarenheter från hur krävande och annorlunda en försäsong och en säsong på ett amerikanskt universitet kan vara. College Camp ger spelare en möjlighet att förbereda sig både mentalt och fysiskt på bästa möjliga sätt för en framgångs fotbolls- och universitetskarriär i USA.  
 
 Vi erbjuder en skräddarsydd träningsvecka utifrån hur de bästa amerikanska universiteten arbetar. Spelaren får en möjlighet att träna med likasinnade framtida collegespelare två pass per dag, samt närvara på informationsseminarier angående allt praktiskt man bör veta om livet som ”Student Athlete.”
+
 </p>
 
 
@@ -291,8 +334,8 @@ Vi erbjuder en skräddarsydd träningsvecka utifrån hur de bästa amerikanska u
 
 
 
-       <div class="  col-md-3 loggaBild texttext">
-        <img class="  col-xs-6 col-sm-4 col-sm-offset-4 col-xs-offset-3 col-md-offset-0 col-md-8"src="logga.png">
+       <div class="col-md-3 loggaBild texttext is-showing">
+        <img class="  col-xs-6 col-sm-4 col-sm-offset-4 col-xs-offset-3 col-md-offset-0 col-md-8" src="logga.png">
        </div>
 
 
@@ -301,32 +344,40 @@ Vi erbjuder en skräddarsydd träningsvecka utifrån hur de bästa amerikanska u
       <hr class="col-xs-11">
 
 
-      <div class="row col-md-8 sistaContent ">
-      <h3 class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja ">träningen</h3>
-        <p class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja">Vi optimerar spelarens träning utifrån vad som krävas i den amerikanska collegefotbollen. Den amerikanska collegefotbollen är avsevärt mer fysisk och tuffare än svensk juniorfotboll med ett konstant högt tempo. Vi förbereder spelaren genom att hålla träningar med fokus på intensitet och fart likt de bästa skolprogrammen i USA. </p>
+      <div class="row col-md-12 sistaContent sistaContent1 ">
+      
+  <div class="textBox col-xs-12 col-md-6 col-md-offset-2">
+      <h3 class="col-xs-10  col-md-10 col-md-offset-1 col-xs-offset-1 tjatja  is-showing">träningen</h3>
+        <p class="col-xs-10  col-md-10 col-xs-offset-1 col-md-offset-1 tjatja is-showing">Vi optimerar spelarens träning utifrån vad som krävas i den amerikanska collegefotbollen. Den amerikanska collegefotbollen är avsevärt mer fysisk och tuffare än svensk juniorfotboll med ett konstant högt tempo. Vi förbereder spelaren genom att hålla träningar med fokus på intensitet och fart likt de bästa skolprogrammen i USA. </p>
+
+      </div>
 
 
       </div>
 
       
 
-       <div style="z-index: 2;" class=" col-xs-12 col-md-3 tjatja loggaBild">
+       <div style="z-index: 2;" class="col-xs-12 col-md-3 tjatja kuks loggaBild is-showing">
         <a style="z-index: 999;" class="col-xs-12" href="soccer3.html"><div class=" vartTeam col-xs-10   col-xs-offset-1 col-md-offset-0 col-md-12"><h2>vårt team</h2></div></a>
        </div>
+
+    </div>
+
+
 
         <hr class="col-xs-11">
 
 
       <div class="row col-md-8  sistaContent ">
-      <h3 class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja ">player profile</h3>
-        <p class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja">College Camp erbjuder varje spelare chansen att skapa sitt eget fotbolls-portfolio. Genom den utvecklade tjänsten ”Playerlot” så kan spelaren marknadsföra sina fotbollskunskaper och bli uppmärksammad av klubbar, tränare, agenter och andra universitet både i USA och Europa. Genom ”Playerlot’s” tjänst kan spelaren ladda upp position, highlight-videos, statistik, och meriter både från skola och fotboll på ett enkelt sätt. </p>
+      <h3 class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja  is-showing">player profile</h3>
+        <p class="col-xs-10  col-md-6 col-xs-offset-1 col-md-offset-2 tjatja is-showing">College Camp erbjuder varje spelare chansen att skapa sitt eget fotbolls-portfolio. Genom den utvecklade tjänsten ”Playerlot” så kan spelaren marknadsföra sina fotbollskunskaper och bli uppmärksammad av klubbar, tränare, agenter och andra universitet både i USA och Europa. Genom ”Playerlot’s” tjänst kan spelaren ladda upp position, highlight-videos, statistik, och meriter både från skola och fotboll på ett enkelt sätt. </p>
 
 
       </div>
 
       
 
-       <div style="margin-bottom: 30px;" class="tjatja col-xs-12 col-md-4  col-md-pull-2 ">
+       <div style="margin-bottom: 30px;" class="tjatja col-xs-12 col-md-4  col-md-pull-2  is-showing">
        <img class="col-xs-12 col-xs-offset-1 fin" src="mobilplayer.png">
        </div>
 
@@ -354,7 +405,7 @@ Vi erbjuder en skräddarsydd träningsvecka utifrån hur de bästa amerikanska u
 
  
 <div class="row footerRow"> 
-  <div class="col-xs-10 col-xs-offset-1  footer" > 
+  <div class="col-xs-10 col-xs-offset-1  footer"> 
   <hr>
   <ul>
     <li><a href="index.html">startsida</a></li>
@@ -370,6 +421,6 @@ Vi erbjuder en skräddarsydd träningsvecka utifrån hur de bästa amerikanska u
 </div>
  
 
-    </div>
-  </body>
-</html>
+    
+  
+</body></html>
